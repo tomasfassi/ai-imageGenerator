@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 40rem;
+    color: #fafafc;
+    padding: 20px 30px;
+    border: 1px solid #fafafc;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    color: #ccc;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+.gen-form{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+input{
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #999;
+    transition: all 0.3s ease;
+}
+
+input:hover, input:focus{
+    border-color: #058c42;
+}
+
+button{
+    width: 20%;
+    height: 36px;
+    color: #020202;
+    border: 1px solid #ccc;
+    background: #16db65;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background: #ccc;
+    border-color: #16db65;
+    color: #058c42;
+}
+
+#loading{
+    display: none;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button:disabled, button[disabled]{
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #666;
+    cursor: auto;
+}
+
+.result{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+#image-grid img{
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#image-grid img:hover{
+    border-color: #058c42;
+}
