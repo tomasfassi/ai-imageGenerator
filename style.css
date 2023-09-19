@@ -21,6 +21,7 @@ body{
     color: #fafafc;
     padding: 20px 30px;
     border: 1px solid #fafafc;
+    border-radius: 5px;
 }
 
 h1{
@@ -119,4 +120,12 @@ button:disabled, button[disabled]{
 
 #image-grid img:hover{
     border-color: #058c42;
+}
+
+h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+    color: #ccc;
 }
