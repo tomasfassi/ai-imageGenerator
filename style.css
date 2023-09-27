@@ -19,9 +19,11 @@ body{
     position: relative;
     width: 40rem;
     color: #fafafc;
+    background: rgba(0, 0, 0, 0.44);
     padding: 20px 30px;
     border: 1px solid #fafafc;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 h1{
